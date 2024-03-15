@@ -3,15 +3,15 @@ import { Link } from 'react-router-dom'
 import './Navbar.css'
 export default function Navbar() {
     const navItems = <>
-    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="text-2xl"  to="/">জাতীয়</Link></li>
-    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="text-2xl"  to="international">আন্তর্জাতিক</Link></li>
-    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="text-2xl"  to="sport">খেলাধুলা</Link></li>
-    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="text-2xl"  to="entertainment">বিনোদন</Link></li>
-    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="text-2xl"  to="country">সারাদেশ</Link></li>
-    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="text-2xl"  to="campus">ক্যাম্পাস</Link></li>
-    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="text-2xl"  to="worldVideo">ভিডিও</Link></li>
-    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="text-2xl"  to="ramadan">রমজান</Link></li>
-  </>
+    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="lg:text-2xl text-sm"  to="/">জাতীয়</Link></li>
+    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="lg:text-2xl text-sm"  to="international">আন্তর্জাতিক</Link></li>
+    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="lg:text-2xl text-sm"  to="sport">খেলাধুলা</Link></li>
+    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="lg:text-2xl text-sm"  to="entertainment">বিনোদন</Link></li>
+    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="lg:text-2xl text-sm"  to="country">সারাদেশ</Link></li>
+    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="lg:text-2xl text-sm"  to="campus">ক্যাম্পাস</Link></li>
+    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="lg:text-2xl text-sm"  to="worldVideo">ভিডিও</Link></li>
+    <li ><Link  style={{ backgroundColor:'transparent', color: '#ffff'}} className="lg:text-2xl text-sm"  to="ramadan">রমজান</Link></li>
+  </> 
   return (
     <>
       <div className="navbar  bg-black py-6 text-white ">
