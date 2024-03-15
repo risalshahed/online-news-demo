@@ -9,6 +9,7 @@ import Country from './Pages/Country/Country'
 import Campus from './Pages/Campus/Campus'
 import WorldVideo from './Pages/WorldVideo/WorldVideo'
 import Ramadan from './Pages/Ramadan/Ramadan'
+import National from './Pages/National/National'
 
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Routes>
           <Route path="/" Component={Home} />
           <Route path='international' Component={International} />
+          <Route path='national' Component={National} />
           <Route path='sport' Component={Sport} />
           <Route path='entertainment' Component={Entertainment} />
           <Route path='country' Component={Country} />
