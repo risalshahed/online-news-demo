@@ -1,7 +1,9 @@
 import React from 'react'
 
-export default function Home() {
+export default function () {
   return (
-    <div>Home</div>
+    <div>
+         ‘আশপাশে নেভি জাহাজ দেখলেই মাথায় অস্ত্র ঠেকাচ্ছে ওরা’
+    </div>
   )
 }
