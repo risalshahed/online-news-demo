@@ -27,6 +27,6 @@ export default function App() {
           <Route path='ramadan' Component={Ramadan} />
         </Routes>
       </div>
-      </>
+    </>
   )
 }
