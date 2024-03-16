@@ -32,9 +32,9 @@ export default function Navbar() {
     </ul>
   </div>
   <div className="navbar-end gap-4 mx-6">
-    <a className="text-4xl"> <i class="fa-brands fa-facebook"></i></a>
-    <a className="text-4xl"><i class="fa-brands fa-youtube"></i></a>
-    <a className="text-4xl"> <i class="fa-brands fa-instagram"></i></a>
+    <a className="text-4xl"> <i className="fa-brands fa-facebook"></i></a>
+    <a className="text-4xl"><i className="fa-brands fa-youtube"></i></a>
+    <a className="text-4xl"> <i className="fa-brands fa-instagram"></i></a>
   </div>
 </div>
      </>
