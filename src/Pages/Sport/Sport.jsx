@@ -1,9 +1,10 @@
 import React from 'react'
-import SportsCom from '../../components/Sports/Sports'
+import SportsComponent from '../../components/Sports/Sports'
 export default function Sport() {
   return (
     <div>
-       <SportsCom />
+      {/* javascript name convention */}
+       <SportsComponent />
     </div>
   )
 }

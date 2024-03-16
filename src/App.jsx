@@ -10,6 +10,7 @@ import Campus from './Pages/Campus/Campus'
 import WorldVideo from './Pages/WorldVideo/WorldVideo'
 import Ramadan from './Pages/Ramadan/Ramadan'
 import National from './Pages/National/National'
+import Details from './components/Details/Details'
 
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
           <Route path='campus' Component={Campus} />
           <Route path='worldVideo' Component={WorldVideo} />
           <Route path='ramadan' Component={Ramadan} />
+          <Route path='details/:id' Component={Details}/>
         </Routes>
       </div>
     </>

@@ -17,13 +17,15 @@ export default function Sports() {
   
 
     return (
-        <div>
+       <div className='flex justify-center mx-8 my-10'>
+           <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4'>
             {
                 sports.map(sport => (
                     <Sport key={sport.id} sport={sport} />
                 ))
             }
         </div>
+       </div>
     );
 };
 
