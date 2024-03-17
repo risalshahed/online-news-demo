@@ -6,7 +6,7 @@ export default function Detail({item}) {
   return (
     <div>
         <div>
-             <p>{title}</p>\
+             <p>{title}</p>
              <img src={img} alt="" srcset="" />
         </div>
     </div>

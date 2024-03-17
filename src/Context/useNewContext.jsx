@@ -5,13 +5,14 @@ export const AuthContext = createContext();
 
 const AuthProvider = ({ children }) => {
     const [NewsData, setNewsData] = useState([]);
+
     const [data, setData] = useState([]);
 
     useEffect(() => {
       const fetchData = async () => {
         try {
-          const response = await fetch('posts.json');
-          const result = await response.json();
+          const res = await fetch('posts.json');
+          const result = await res.json();
           setData(result);
         } catch (error) {
           console.error('Error fetching data:', error);

@@ -10,7 +10,7 @@ export default function Entertainment({entertainment}) {
     <figure>{img && <img src={img} alt="" />}</figure>
     <div className="card-body">
   
-      <h2 className="card-title">{title}</h2>
+      <h2 className="card-title text-black">{title}</h2>
 
     </div>
   </div>
