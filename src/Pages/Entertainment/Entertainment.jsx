@@ -1,7 +1,10 @@
 import React from 'react'
-
+import EntertainmentsComponent from '../../components/Entertainments/Entertainments'
 export default function Entertainment() {
   return (
-    <div>বিনোদন </div>
+     <div>
+        {/* javascript name convention */}
+         <EntertainmentsComponent />
+     </div>
   )
 }
