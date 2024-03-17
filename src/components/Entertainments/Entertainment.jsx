@@ -11,7 +11,7 @@ export default function Entertainment({entertainment}) {
     <div className="card-body">
   
       <h2 className="card-title text-black">{title}</h2>
-
+      <p className='text-black'>{category}</p>
     </div>
   </div>
   </Link>

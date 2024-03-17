@@ -15,9 +15,19 @@ export default function Details() {
   }
 
   return (
+
+<div class="flex lg:flex-row flex-col">
+<div class="lg:w-2/3 w-[100%]">
     <div key={item.id}>
        <Detail item={item}></Detail>
     </div>
+    </div>
+  <div class="lg:w-1/3 w-[100%]">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iste.</p>
+  </div>
+ 
+  </div>
+    
   );
 };
   
