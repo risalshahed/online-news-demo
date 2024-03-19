@@ -9,27 +9,24 @@ import Campus from './Pages/Campus/Campus'
 import WorldVideo from './Pages/WorldVideo/WorldVideo'
 import Ramadan from './Pages/Ramadan/Ramadan'
 import National from './Pages/National/National'
-import { NewsProvider } from './Context/NewsContext'
 import Details from './components/Details/Details'
 
 export default function App() {
   return (
-   <NewsProvider>
-      <div className="app">
-        <Navbar />
-        <Routes>
-          <Route path="/" Component={Home} />
-          <Route path='international' Component={International} />
-          <Route path='national' Component={National} />
-          <Route path='sport' Component={Sport} />
-          <Route path='entertainment' Component={Entertainment} />
-          <Route path='country' Component={Country} />
-          <Route path='campus' Component={Campus} />
-          <Route path='worldVideo' Component={WorldVideo} />
-          <Route path='ramadan' Component={Ramadan} />
-          <Route path=':id' Component={Details} />
-        </Routes>
-      </div>
-    </NewsProvider>
+    <div className="app">
+      <Navbar />
+      <Routes>
+        <Route path="/" Component={Home} />
+        <Route path='international' Component={International} />
+        <Route path='national' Component={National} />
+        <Route path='sport' Component={Sport} />
+        <Route path='entertainment' Component={Entertainment} />
+        <Route path='country' Component={Country} />
+        <Route path='campus' Component={Campus} />
+        <Route path='worldVideo' Component={WorldVideo} />
+        <Route path='ramadan' Component={Ramadan} />
+        <Route path=':id' Component={Details} />
+      </Routes>
+    </div>
   )
 }

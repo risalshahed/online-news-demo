@@ -1,6 +1,6 @@
 import React from 'react'
 import EachInternational from './EachInternational';
-import useCategoryData from '../../Context/useCategoryData';
+import useCategoryData from '../../Context/useFetchCategorizedData';
 
 export default function InternationalPosts() {
   const data = useCategoryData('আন্তর্জাতিক');

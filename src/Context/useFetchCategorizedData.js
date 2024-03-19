@@ -1,11 +1,8 @@
-import { useContext, useEffect } from 'react';
-import { NewsContext } from './NewsContext';
+import { useEffect, useState } from 'react';
 
 export default function useCategoryData(category) {
-  const {val1, val2} = useContext(NewsContext);
-
-  const [data, setData] = val1;
-  const [isLoading, setIsLoading] = val2;
+  const [data, setData] = useState([]);
+  const [isLoading, setIsLoading] = useState(false);
 
   const fetchData = async () => {
     setIsLoading(true);

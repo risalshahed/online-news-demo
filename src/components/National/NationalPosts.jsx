@@ -1,6 +1,6 @@
 import React from 'react'
 import EachNaitonal from './EachNaitonal';
-import useCategoryData from '../../Context/useCategoryData';
+import useCategoryData from '../../Context/useFetchCategorizedData';
 
 export default function NationalPosts() {
   const data = useCategoryData('জাতীয়');

@@ -1,4 +1,4 @@
-import useCategoryData from '../../Context/useCategoryData';
+import useCategoryData from '../../Context/useFetchCategorizedData';
 import Entertainment from './Entertainment';
 
 export default function Sports() {

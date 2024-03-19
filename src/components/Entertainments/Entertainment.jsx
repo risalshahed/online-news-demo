@@ -1,19 +1,18 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 export default function Entertainment({entertainment}) {
-    console.log(entertainment);
-    const {title, id , img, category,date,description} = entertainment
+  const { title, id, img } = entertainment;
+
+  const navigate = useNavigate();
+  const handleNavigate = () => navigate(`/${id}`)
+
   return (
-    // <Link to={`/details/${id}`}>
-    <div className="">
-      <figure>{img && <img src={img} alt="" />}</figure>
+    <div className='cursor-pointer' onClick={handleNavigate}>
+      <img src={img} alt={title} />
       <div className="card-body">
-    
-        <h2 className="card-title text-black">{title}</h2>
-        <p className='text-black'>{category}</p>
+        <h2 className="text-xs text-black lg:text-2xl md:text-1xl">{title}</h2>
       </div>
     </div>
-  // </Link>
   )
 }
