@@ -1,4 +1,3 @@
-
 import { Route, Routes } from 'react-router-dom'
 import Navbar from './shared/Navbar/Navbar'
 import Home from './Pages/Home/Home'
@@ -10,14 +9,14 @@ import Campus from './Pages/Campus/Campus'
 import WorldVideo from './Pages/WorldVideo/WorldVideo'
 import Ramadan from './Pages/Ramadan/Ramadan'
 import National from './Pages/National/National'
+import { NewsProvider } from './Context/NewsContext'
 import Details from './components/Details/Details'
-
 
 export default function App() {
   return (
-   <>
+   <NewsProvider>
       <div className="app">
-      <Navbar />
+        <Navbar />
         <Routes>
           <Route path="/" Component={Home} />
           <Route path='international' Component={International} />
@@ -28,9 +27,9 @@ export default function App() {
           <Route path='campus' Component={Campus} />
           <Route path='worldVideo' Component={WorldVideo} />
           <Route path='ramadan' Component={Ramadan} />
-          <Route path='details/:id' Component={Details}/>
+          <Route path=':id' Component={Details} />
         </Routes>
       </div>
-    </>
+    </NewsProvider>
   )
 }

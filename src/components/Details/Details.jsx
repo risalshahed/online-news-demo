@@ -1,34 +1,24 @@
-import React, { useContext } from 'react'
-import { AuthContext } from '../../Context/useNewContext'
-import { useParams } from 'react-router-dom';
-import Detail from './Detail';
+import { useParams } from 'react-router-dom'
+import { useContext } from 'react';
+import { NewsContext } from '../../Context/NewsContext';
 
 export default function Details() {
   const { id } = useParams();
-  const{ data }= useContext(AuthContext)
+  // console.log(id);
 
-  // Find data corresponding to the provided ID
-  const item = data.find(item => item.id === parseInt(id));
+  const {val1, val2} = useContext(NewsContext);
+  const [data] = val1;
+  const [isLoading] = val2;
 
-  if (!item) {
-    return <div>No data found for the provided ID</div>;
-  }
+  const singleNews = data?.find(datum => datum.id === parseFloat(id));
+
+  if (isLoading || !singleNews) return <div>Loading...</div>;
 
   return (
-
-<div class="flex lg:flex-row flex-col">
-<div class="lg:w-2/3 w-[100%]">
-    <div key={item.id}>
-       <Detail item={item}></Detail>
+    <div className='max-w-[1200px] mx-auto my-10'>
+      <h2 className='text-4xl text-center font-bold'>{singleNews.title}</h2>
+      <img className='mx-auto my-8 rounded-2xl' src={singleNews.img} alt={singleNews.title} />
+      <p className='text-justify'>{singleNews.description}</p>
     </div>
-    </div>
-  <div class="lg:w-1/3 w-[100%]">
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, iste.</p>
-  </div>
- 
-  </div>
-    
-  );
-};
-  
-
+  )
+}

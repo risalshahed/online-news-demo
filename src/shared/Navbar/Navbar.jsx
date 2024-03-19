@@ -5,7 +5,8 @@ import './Navbar.css';
 
 const Navbar = () => {
   const navLinks = [
-    { path: "/", name: "জাতীয়" },
+    { path: "/", name: "" },
+    { path: "/national", name: "জাতীয়" },
     { path: "/international", name: "আন্তর্জাতিক" },
     { path: "/sport", name: "খেলাধুলা" },
     { path: "/entertainment", name: "বিনোদন" },

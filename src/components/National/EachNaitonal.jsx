@@ -1,8 +1,7 @@
-import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-export default function Sport({sport}) {
-  const {title, img, id, description, date, category} = sport;
+export default function EachNaitonal({ national }) {
+  const {title, img, id} = national;
 
   const navigate = useNavigate();
 
