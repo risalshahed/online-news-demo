@@ -27,8 +27,8 @@ export default function HomeCover() {
           <div className='absolute top-3 left-3 bg-black opacity-85 text-white px-2 py-1 z-20'>
             {sortedNews[1]?.category}
           </div>
-          <div className='flex gap-x-3'>
-            <img className='w-2/3' src={sortedNews[1]?.img} alt={sortedNews[1]?.title} />
+          <div className='flex flex-col sm:flex-row gap-x-3 gap-y-2'>
+            <img className='w-full sm:w-2/3' src={sortedNews[1]?.img} alt={sortedNews[1]?.title} />
             <h3 className='font-semibold text-xl hover:text-red-600'>{sortedNews[1]?.title}</h3>
           </div>
         </div>
@@ -37,8 +37,8 @@ export default function HomeCover() {
           <div className='absolute top-3 left-3 bg-black opacity-85 text-white px-2 py-1 z-20'>
             {sortedNews[2]?.category}
           </div>
-          <div className='flex gap-x-3'>
-            <img className='w-2/3' src={sortedNews[2]?.img} alt={sortedNews[2]?.title} />
+          <div className='flex flex-col sm:flex-row gap-x-3 gap-y-2'>
+            <img className='w-full sm:w-2/3' src={sortedNews[2]?.img} alt={sortedNews[2]?.title} />
             <h3 className='font-semibold text-xl hover:text-red-600'>{sortedNews[2]?.title}</h3>
           </div>
         </div>

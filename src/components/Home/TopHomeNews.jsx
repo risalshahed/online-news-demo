@@ -18,7 +18,7 @@ export default function TopHomeNews() {
     
 
   return (
-    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 my-8'>
+    <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 my-12 sm:my-8'>
       {topNews}
     </div>
   )
