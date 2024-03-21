@@ -11,11 +11,10 @@ export default function TopHomeNews() {
     sortedNews?.map(eachNews =>
       <div className='flex flex-col gap-y-2 cursor-pointer' onClick={() => navigate(`/${eachNews.id}`)}>
         <img src={eachNews.img} alt={eachNews.title} />
-        <h2 className="text-sm md:text-lg lg:text-xl font-semibold hover:text-red-500">{eachNews.title}</h2>
+        <h2 className="text-sm md:text-lg lg:text-xl font-semibold hover:text-red-600">{eachNews.title}</h2>
       </div>
     ).slice(3, 15)
   )
-    
 
   return (
     <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-4 gap-y-8 my-12 sm:my-8'>
