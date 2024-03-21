@@ -1,8 +1,7 @@
 a{
-    
-    color: white !important;
-    transition: ease-in-out 1s !important;
+  color: white !important;
+  transition: ease-in-out 1s !important;
 }
 a:hover{
-    color: rgb(243, 45, 111) !important;
+  color: rgb(243, 45, 111) !important;
 }

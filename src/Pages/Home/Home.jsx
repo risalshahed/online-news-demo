@@ -1,10 +1,11 @@
 import React from 'react';
-import HomeComp from '../../components/Home/Home';
+import HomeNews from '../../components/Home/Home'
+
 const Home = () => {
     return (
-        <div>
-         <HomeComp />
-        </div>
+      <div>
+        <HomeNews />
+      </div>
     );
 };
 

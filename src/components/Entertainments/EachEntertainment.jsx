@@ -1,11 +1,10 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom';
 
-export default function Sport({sport}) {
-  const {title, img, id, description, date, category} = sport;
+export default function EachEntertainment({entertainment}) {
+  const { title, id, img } = entertainment;
 
   const navigate = useNavigate();
-
   const handleNavigate = () => navigate(`/${id}`)
 
   return (

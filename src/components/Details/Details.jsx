@@ -1,19 +1,19 @@
 import { useParams } from 'react-router-dom'
-import useFetchSingleData from '../../Context/useFetchSingleData';
+import useFetchSingleNews from '../../hooks/useFetchSingleNews';
 
 export default function Details() {
   const { id } = useParams();
-  // console.log(id);
+  
+  const singleNews = useFetchSingleNews(id);
+  const { title, img, description } = singleNews;
 
-  const singleData = useFetchSingleData(id);
-
-  // if (isLoading || !singleData) return <div>Loading...</div>;
+  // if (isLoading || !singleNews) return <div>Loading...</div>;
 
   return (
     <div className='max-w-[1200px] mx-auto my-10'>
-      <h2 className='text-4xl text-center font-bold'>{singleData.title}</h2>
-      <img className='mx-auto my-8 rounded-2xl' src={singleData.img} alt={singleData.title} />
-      <p className='text-justify'>{singleData.description}</p>
+      <h2 className='text-4xl text-center font-bold'>{title}</h2>
+      <img className='mx-auto my-8 rounded-2xl' src={img} alt={title} />
+      <p className='text-justify'>{description}</p>
     </div>
   )
 }

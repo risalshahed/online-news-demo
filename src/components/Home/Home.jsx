@@ -1,9 +1,12 @@
 import React from 'react'
+import HomeCover from './HomeCover'
+import TopHomeNews from './TopHomeNews'
 
-export default function () {
+export default function HomeNews () {
   return (
-    <div>
-         ‘আশপাশে নেভি জাহাজ দেখলেই মাথায় অস্ত্র ঠেকাচ্ছে ওরা’
+    <div className='my-16 mx-8'>
+      <HomeCover />
+      <TopHomeNews />
     </div>
   )
 }
